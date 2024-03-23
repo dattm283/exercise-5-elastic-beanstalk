@@ -3,6 +3,20 @@
 This is a simple tweeter like application server.
 
 ***
+## Project Submission Checklist
+
+### The project uses AWS Elastic Beanstalk’s CLI and Console Dashboard
+
+- [x] The project was deployed using the AWS Elastic Beanstalk CLI eb init, eb create, and eb deploy commands.
+
+- [x] A screenshot of the elastic beanstalk application dashboard is included in a ``` deployment_screenshot``` directory.
+![Elastic beanstalk application dashboard](./deployment_screenshot/Elastic_beanstalk_application_dashboard.png)
+
+### The project includes functional cloud deployments
+
+- [x] An endpoint URL for a running elastic beanstalk deployment (http://exercise-5-elastic-beanstalk-dev2.us-east-1.elasticbeanstalk.com/) has been submitted along with the project submission. This endpoint responds to valid GET requests including: 
+[Example link](http://exercise-5-elastic-beanstalk-dev2.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg)
+
 ## Getting Setup
 
 ### Installing project dependencies
