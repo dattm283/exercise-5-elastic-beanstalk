@@ -4,15 +4,15 @@ import { S3Client } from "@aws-sdk/client-s3";
 
 const s3 = new S3Client({
     credentials: {
-        accessKeyId: "AKIA55LG67TMINAMNEOV",
-        secretAccessKey: "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",
+        accessKeyId: process.env['AWS_ACCESS_KEY_ID'],
+        secretAccessKey: process.env['AWS_SECRET_ACCESS_KEY'],
     },
-    region: "us-east-1"
+    region: process.env['AWS_REGION']
 })
 
 const s3Storage = multerS3({
     s3: s3,
-    bucket: "user3104036project2bucket", 
+    bucket: process.env['S3_BUCKET_NAME'], 
     metadata: (req, file, cb) => {
         cb(null, {fieldname: file.fieldname})
     },
